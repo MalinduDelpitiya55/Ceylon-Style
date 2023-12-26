@@ -23,8 +23,8 @@
                             
                                     <div class="tabPanel">
                                             <div class="item-column">
-                                                <h4 class="subtitle">Casualwear</h4>
                                                 <ul>
+                                                    <h4 class="subtitle">Casualwear</h4>
                                                     <li><a href="#">Dresses</a></li>
                                                     <li><a href="#">Tops & T Shirts</a></li>
                                                     <li><a href="#">Shirts</a></li>
@@ -33,11 +33,11 @@
                                                     <li><a href="#">Jackets</a></li>
                                                     <li><a href="#">Bodysuits</a></li>
                                                 </ul>
-                                            </div>
+                                            
 
                                             <div class="item-column">
-                                                <h4 class="subtitle">Formalwear</h4>
                                                 <ul>
+                                                    <h4 class="subtitle">Formalwear</h4>
                                                     <li><a href="#">Dresses</a></li>
                                                     <li><a href="#">Shirts & Tops</a></li>
                                                     <li><a href="#">Pants & Trousers</a></li>
@@ -46,8 +46,8 @@
                                             </div>
 
                                             <div class="item-column">
-                                                <h4 class="subtitle">Nightwear</h4>
                                                 <ul>
+                                                    <h4 class="subtitle">Nightwear</h4>
                                                     <li><a href="#">Night Dress</a></li>
                                                     <li><a href="#">Loungewear Sets</a></li>
                                                     <li><a href="#">Night Shirts</a></li>
@@ -62,8 +62,9 @@
                                             </div>
 
                                             <div class="item-column">
-                                                <h4 class="subtitle">Swim & Beachwear</h4>
+                                                
                                                 <ul>
+                                                    <h4 class="subtitle">Swim & Beachwear</h4>
                                                     <li><a href="#">Swim Tops</a></li>
                                                     <li><a href="#">Swim Bottoms</a></li>
                                                     <li><a href="#">Swim Sets</a></li>
@@ -84,8 +85,8 @@
                                             </div>
 
                                             <div class="item-column">
-                                                <h4 class="subtitle">Accessories</h4>
                                                 <ul>
+                                                    <h4 class="subtitle">Accessories</h4>
                                                     <li><a href="#">Caps & Hats</a></li>
                                                     <li><a href="#">Scarves & Shawls</a></li>
                                                     <li><a href="#">Hair Accessories</a></li>

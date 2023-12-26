@@ -27,7 +27,8 @@
                         
                             <?php
                                 if (isset($_SESSION["username"])) {
-                                  echo '<li><a id="RegisterdUser" href="#">Hello '. $_SESSION["username"] . ' !<img src="../images/interface icons/login.png" width="35px" /></a></li>';
+                                    echo '<li><a id="RegisterdUser" href="#">Hello '. $_SESSION["username"] . ' !<img src="../images/interface icons/login.png" width="35px" /></a></li>';
+                                    echo '<li><a id="RegisterdUser" href="#">Hello '. $_SESSION["username"] . ' !<img src="../images/interface icons/login.png" width="35px" /></a></li>';
                                 } else {
                                   echo '<li><a id="User" href="Loginpage.php">Hello User !<img src="../images/interface icons/login.png" width="35px" /></a></li>';
                                 }

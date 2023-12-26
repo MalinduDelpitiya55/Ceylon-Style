@@ -25,9 +25,9 @@
 .tabContainer .buttonContainer button:hover{
     background-color: #8f8691;
 }
-.tabContainer .panel .tabPanel .item-column{
+.tabContainer   .item-column{
         height: -28%;
-        color: white;
+        color: black;
         text-align: center;
         padding-top: 0px;
         box-sizing: border-box;
@@ -36,27 +36,42 @@
         display: none;
         margin-right: 73%;
         display: flex;
-        flex-direction: row;
-            justify-content: space-between;
-            margin-bottom: 20px;
+        flex-direction: column;
 }
+
+
+
 
 .tabPanel {
-    
+    display: flex;
+    justify-content: space-between;
+    /* Adjust as needed */
 }
 
-
-.item-column{
-
-    padding: 2rem;
-    border: 1px solid blue;
+.panel {
+    display: flex;
 }
 
-.panel{
-     display: flex;
-     flex-direction: row;
+.item-column {
+    margin-right: 20px;
+    /* Adjust as needed */
 }
 
+.subtitle {
+    margin-bottom: 10px;
+    /* Adjust as needed */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 5px;
+    /* Adjust as needed */
+}
 ul{
     list-style-type: none;
 }
