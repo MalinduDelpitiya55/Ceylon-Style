@@ -1,3 +1,10 @@
+ <!-- header -->
+    <?php
+        include_once 'header.php';
+    ?>
+
+<!-- header -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,18 +12,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FashionFix | Online Clothing Store</title>
-    <link rel="stylesheet" href="../css/LoginStyle.css" >
+    <link rel="stylesheet" href="../css/loginPage.css" >
 </head>
 
 <body>
     <script src="../js/LoginScript.js"></script>
 
-    <!-- header -->
-    <?php
-        include_once 'header.php';
-    ?>
-
-    <!-- header -->
+   
 
     <!-- Login page -->
     <div class="account-page"> 

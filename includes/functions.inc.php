@@ -70,7 +70,7 @@
         $sql  = "INSERT INTO userlogin( userName, userEmail,	userPassword) VALUES (?,?,?) ;";
         $stmt = mysqli_stmt_init($conn);
         if(!mysqli_stmt_prepare($stmt, $sql)){
-            header("Location:../html/Loginpage.php?error=stmtfailed");
+            header("Location:../html/LoginpPage.php?error=stmtfailed");
             exit();
         }
 
@@ -78,7 +78,7 @@
         mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedpwd);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("Location:../html/Loginpage.php?error=none");
+        header("Location:../html/LoginPage.php?error=none");
         exit();
     }
 
@@ -99,7 +99,7 @@
     function loginUser($conn, $username, $pwd){
         $uidExists = uidExists($conn, $username, $username);
         if($uidExists === false){
-            header("Location: ../html/Loginpage.php?error=wronglogin");
+            header("Location: ../html/LoginPage.php?error=wronglogin");
             exit();
         }
     
@@ -107,7 +107,7 @@
         $checkpwd = password_verify($pwd, $pwdHashed);
     
         if($checkpwd === false){
-            header('Location: ../html/Loginpage.php?error=wronglogin');
+            header('Location: ../html/LoginPage.php?error=wronglogin');
             exit();
         }
         
@@ -116,7 +116,12 @@
             $_SESSION["userid"] = $uidExists["userID"];
             $_SESSION["username"] = $uidExists["userName"];
             
-            header("Location: ../html/Homepage.php");
+            if(	$uidExists['role']=="admin"){
+                header('Location:../html/adminItem.php');  
+            }
+            else{
+                header("Location: ../html/home.php");
+            }
             exit();
         }
     }

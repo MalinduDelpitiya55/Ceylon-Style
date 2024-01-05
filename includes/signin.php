@@ -6,7 +6,7 @@
         $rpwd = $_POST["rpwd"];
 
 
-        require_once 'dbh.inc.php';
+        require_once 'dbh.inc.php'; 
         require_once 'functions.inc.php';
         
         $emptyInput = emptyInputSignup($username, $email, $pwd, $rpwd);
@@ -17,34 +17,34 @@
 
         if($emptyInput !==false){
             
-            header("Location: ../html/Loginpage.php?error=emptyinput");
+            header("Location: ../html/LoginPage.php?error=emptyinput");
             
             exit();
         }
 
         if($invalidUid !==false){
-            header("Location: ../html/Loginpage.php?error=invaliduid");
+            header("Location: ../html/LoginPage.php?error=invaliduid");
             exit();
         }
 
         if($invalidEmail !==false){
-            header("Location: ../html/Loginpage.php?error=invalidemail");
+            header("Location: ../html/LoginPage.php?error=invalidemail");
             exit();
         }
 
         if($pwdMatch !==false){
-            header("Location: ../html/Loginpage.php?error=passwordNotMaching");
+            header("Location: ../html/LoginPage.php?error=passwordNotMaching");
             exit();
         }
 
         if($uidExists !==false){
-            header("Location: ../html/Loginpage.php?error=uidalreadyExcist");
+            header("Location: ../html/LoginPage.php?error=uidalreadyExcist");
             exit();
         }
 
         createUser($conn, $username,$email,$pwd);
     }
     else{
-        header('Location: ../html/Loginpage.php');
+        header('Location: ../html/LoginPage.php');
     }
 ?>
